@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.section-container {
+    @apply px-4 md:px-12 max-w-[1440px] mx-auto;
+}
+
+@theme {
+    --breakpoint-media440: 440px;
+    --breakpoint-media560: 560px;
+    --breakpoint-media1200: 1200px;
+}
+
+.nav-links.show {
+    @apply flex flex-col absolute top-[90px] right-0 bg-black/70 backdrop-blur-sm space-y-4 p-3 cursor-pointer z-10
+}
